@@ -1,3 +1,6 @@
+const { Router } = require('express');
+const indexRouter = Router();
+
 const messages = [
 	{
 		text: 'Hi there!',
@@ -10,3 +13,9 @@ const messages = [
 		added: new Date(),
 	},
 ];
+
+indexRouter.get('/', (req, res) => {
+	res.render('index', { messages: messages });
+});
+
+module.exports = indexRouter;
