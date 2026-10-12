@@ -22,4 +22,10 @@ indexRouter.get('/new', (req, res) => {
 	res.render('form');
 });
 
+indexRouter.post('/new', (req, res) => {
+	console.log(req.body);
+	res.status(201);
+	res.render('form');
+});
+
 module.exports = indexRouter;
