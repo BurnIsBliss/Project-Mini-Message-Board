@@ -1,7 +1,7 @@
 <div>
     <% for (let i = 0; i < messageList.length; i++) { %>
         <div style="border: 2px solid red; margin-bottom: 10px;">
-            <h2>Message #<%= i %></h2>
+            <h2>Message #<%= i+1 %></h2>
             <div><strong>Message: </strong><%= messageList[i].text %></div>
             <div><strong>User: </strong><%= messageList[i].user %></div>
             <div><strong>Date posted: </strong><%= messageList[i].added %></div>
